@@ -5,7 +5,7 @@ if [ "a$BUILDTYPE" == "a" ]; then
 	if [ `uname -s` == Linux ]; then
 		BUILDTYPE="Unix Makefiles"
 	elif [ `uname -s` == Darwin ]; then
-		BUILDTYPE=Xcode
+		BUILDTYPE="Unix Makefiles"
 	elif [ `uname -o` == Msys ]; then
 		BUILDTYPE=VS
 	fi
